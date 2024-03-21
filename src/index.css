@@ -18,7 +18,7 @@ body {
     line-height: 1.43;
     -webkit-font-smoothing: antialiased;
     font-family: "Oswald", Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 img, picture, video, canvas, svg {
@@ -79,8 +79,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @-webkit-keyframes slide-in-left {
     0% {
-      -webkit-transform: translateX(-1000px);
-              transform: translateX(-1000px);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
       opacity: 0;
     }
     100% {
@@ -91,8 +91,8 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   @keyframes slide-in-left {
     0% {
-      -webkit-transform: translateX(-1000px);
-              transform: translateX(-1000px);
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
       opacity: 0;
     }
     100% {
@@ -109,8 +109,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @-webkit-keyframes slide-in-right {
     0% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
       opacity: 0;
     }
     100% {
@@ -119,10 +119,12 @@ p, h1, h2, h3, h4, h5, h6 {
       opacity: 1;
     }
   }
+  
   @keyframes slide-in-right {
     0% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+              
       opacity: 0;
     }
     100% {
@@ -235,7 +237,7 @@ p, h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
     height: 100vh;
     z-index: 3;
-    padding: 16px;
+    padding: 16px 50px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1023,7 +1025,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
     .container {
         width: 100%;
-        padding: 16px !important;
+        padding: 16px 50px !important;
     }
 
     .about-page {
